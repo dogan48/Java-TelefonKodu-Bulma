@@ -8,12 +8,12 @@ public class TelefonKoduBulma {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("Telefon Numarasý giriniz: ");
+		System.out.print("Telefon NumarasÄ± giriniz: ");
 		Scanner scanner = new Scanner(System. in);
 		String telefonNo = scanner. nextLine();
 		telefonNo = telefonNoHazirla(telefonNo);
 		if(!telefonNo.equals("-1")) {
-			String telefonKodu = telefonNo.substring(0, 3);// ülke kodunu attýktan sonra ilk 3 hane tel. kodu
+			String telefonKodu = telefonNo.substring(0, 3);// Ã¼lke kodunu attÃ½ktan sonra ilk 3 hane tel. kodu
 			System.out.print(telefonNo);
 			System.out.println(" | " + telefonKodu + " : " + telefonKoduBul(telefonKodu));
 		
@@ -54,7 +54,7 @@ public class TelefonKoduBulma {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-		return "Telefon Kodu Bulunamadi";
+		return "Telefon Kodu BulunamadÄ±";
 	}
 
 }
